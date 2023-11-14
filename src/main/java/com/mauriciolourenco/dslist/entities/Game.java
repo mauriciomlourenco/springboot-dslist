@@ -22,10 +22,14 @@ public class Game {
     private Integer year;
     private String genre;
     private String platforms;
-    private String imgUrl;
-    private String shortDescription;
-    private String longDescription;
     private Double score;
+    private String imgUrl;
+
+    @Column(columnDefinition = "TEXT")
+    private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
+    private String longDescription;
 
     public Game() {
 
